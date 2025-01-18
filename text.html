@@ -1,0 +1,35 @@
+<html>         BOUNCING BALLL
+    <head>      
+        <title>Animation23</title>
+        <style>
+            div{
+                position:relative;
+                background-color:red;
+                animation:first;
+                height:100px;
+                width:100px;
+                border:solid 7px green;
+                border-radius:50px;
+                animation-duration:2s;
+                animation-iteration-count: infinite;
+                outline:solid 2px white;
+            }
+            @keyframes first {
+                0%{border-color:green yellow red blue;box-shadow:1px 2px 6px green}
+                25%{border-color:blue green yellow red;box-shadow:10px 2px 6px rgb(7, 192, 63)}
+                50%{border-color:red blue green yellow;box-shadow:1px 10px 6px rgb(0, 162, 255)}
+                75%{border-color:yellow red blue green;box-shadow:-10px 2px 6px green}           
+                100%{border-color:green yellow red blue;box-shadow:2px -10px 6px green}
+               
+            }
+
+        </style>
+
+
+    </head>
+    <body>
+        <div>
+           
+        </div>
+    </body>
+    </html>

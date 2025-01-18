@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Epic Brawlers of Brawl Stars</title>
+    
+
+    <style>
+      * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+}
+
+header {
+    background-color: #dc1aae;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.brawler-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.brawler-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    width: 30%;
+    transition: transform 0.3s;
+}
+
+.brawler-card:hover {
+    transform: scale(1.05);
+}
+
+.brawler-card img {
+    width: 100%;
+    height: auto;
+}
+
+.brawler-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.brawler-info h2 {
+    margin: 10px
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Epic Brawlers of Brawl Stars</h1>
+        </header>
+        <div class="content">
+            <nav class="sidebar">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="#brawler1">Brawler 1</a></li>
+                    <li><a href="#brawler2">Brawler 2</a></li>
+                    <li><a href="#brawler3">Brawler 3</a></li>
+                    <li><a href="first.html">Back to fan page</a></li>
+                   
+                </ul>
+            </nav>
+            <main>
+                <section class="brawler-container">
+                    <div class="brawler-card" id="brawler1">
+                        <img src="./images/stu.jpg" alt="Epic Brawler 1">
+                        <div class="brawler-info">
+                            <h2>STU</h2>
+                            <p>Role: Assassin</p>
+                            <p>Super: Nitro boost</p>
+                        </div>
+                    </div>
+                    <div class="brawler-card" id="brawler2">
+                        <img src="./images/piper.jpg" alt="Epic Brawler 2">
+                        <div class="brawler-info">
+                            <h2>PIPER</h2>
+                            <p>Role: Sniper</p>
+                            <p>Super: Piper hops away and leave four grenades for enemy's</p>
+                        </div>
+                    </div>
+                    <div class="brawler-card" id="brawler3">
+                        <img src="./images/frank.jpg" alt="Epic Brawler 3">
+                        <div class="brawler-info">
+                            <h2>FRANK</h2>
+                            <p>Role: Tank</p>
+                            <p>Super: Frank stuns and destroy environment </p>
+                        </div>
+                    </div>
+                
+                </section>
+            </main>
+        </div>
+        <footer>
+            <p>&copy; 2025 Brawl Stars Fan Page</p>
+        </footer>
+    </div>
+</body>
+</html>

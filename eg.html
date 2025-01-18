@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700&display=swap" rel="stylesheet">
+    <title>Brawl Stars Fan Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #232121;
+        }
+
+        header {
+            background: #ffcc00;
+            color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background: #fff;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        /* Events Section */
+        #events {
+            background-color: #232121;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 50px 100px;
+        }
+
+        /* Buttons with Rotating Border Effect */
+        #events button {
+            position: relative;
+            font-size: 20px;
+            width: 180px;
+            padding: 10px 20px;
+            background-color: black;
+            color: green;
+            font-family: "Poppins", sans-serif;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            overflow: hidden;
+            z-index: 1;
+            outline: none;
+        }
+
+        #events button::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            background: linear-gradient(45deg, red, yellow, green, blue, purple);
+            border-radius: 25px;
+            z-index: -1;
+            animation: rotate-border 3s linear infinite;
+        }
+
+        @keyframes rotate-border {
+            0% {
+                background: linear-gradient(0deg, red, yellow, green, blue, purple);
+            }
+            100% {
+                background: linear-gradient(360deg, red, yellow, green, blue, purple);
+            }
+        }
+
+        #events button:hover {
+            color: white;
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Brawl Stars Fan Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#brawlers">Brawlers</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Brawl Stars</h2>
+            <p>Brawl Stars is a multiplayer online battle game developed and published by Supercell. Players can battle in various game modes, each with unique objectives.</p>
+        </section>
+
+        <section id="events">
+            <button id="rare">RARE</button>
+            <button id="epic">EPIC</button>
+            <button id="myth">MYTHIC</button>
+            <button id="legend">LEGENDARY</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Brawl Stars Fan Page. All rights reserved.</p>
+        <p>Follow us on <a href="#">Twitter</a> | <a href="#">Facebook</a></p>
+    </footer>
+</body>
+</html>

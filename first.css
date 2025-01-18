@@ -1,0 +1,178 @@
+body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #232121;
+}
+
+header {
+  background: #ffcc00;
+  color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  background: #fff;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.brawler-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.brawler-images img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #333;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+#events{
+  background-color: #232121;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  margin-left:100px;
+  margin-top:50px;
+  margin-right:100px;
+  border:solid 1px green;
+  animation:first;
+  animation-duration:5s;
+  animation-iteration-count: infinite;
+  outline:solid 3px white;
+  border-radius:10px;
+
+}
+button{
+  
+  font-size:20px;
+  width:180px;
+  padding:10px;
+  padding-left: 20px;
+  padding-right:20px;
+  background-color:black;
+  color:rgb(0, 255, 0);
+  font-family: "Poppins", serif;
+  border:solid 8px;
+  border-radius:20px;
+  margin:20px;
+}
+
+
+#rare:hover{
+  font-weight:700;
+  border:solid 8px blue;
+  box-shadow: 6px 7px 5px blue;
+  color:blue;
+  outline: solid 2px white;
+  cursor:pointer;
+  
+}
+#epic:hover{
+  font-weight:700;
+  border:solid 8px rgb(137, 7, 111);
+  box-shadow: 6px 7px 5px rgb(137, 7, 111);
+  color:rgb(137, 7, 111);
+  outline: solid 2px #ffffff;
+  cursor:pointer;
+  
+}
+#myth:hover{
+  font-weight:700;
+  border:solid 8px rgb(234, 11, 11);
+  box-shadow: 6px 7px 5px rgb(234, 11, 11);
+  color:rgb(234, 11, 11);
+  outline: solid 2px white;
+  cursor:pointer;
+  
+}
+#legend:hover{
+  font-weight:700;
+  border:solid 8px rgb(255, 242, 0);
+  box-shadow: 6px 7px 5px rgb(255, 242, 0);
+  color:rgb(255, 242, 0);
+  outline: solid 2px white;
+  cursor:pointer;
+  
+}
+
+#about{
+  background-color: #333;
+  color:aliceblue;
+  font-size:25px;
+  border:solid 6px rgb(26, 133, 255);
+  box-shadow:0px 0px 10px  rgb(26, 133, 255);
+  border-radius:20px;
+}
+
+#image-container{
+  display:flex;
+  justify-content: space-between;
+  
+}
+
+img{
+  border-radius:25px;
+}
+
+@keyframes first {
+  0%{box-shadow:0px 0px 40px rgb(38, 255, 38)}
+  18%{box-shadow:0px 0px 40px rgb(126, 255, 126)}
+  38%{box-shadow:0px 0px 40px rgb(181, 173, 173)}
+  55%{box-shadow:0px 0px 40px rgb(249, 78, 255)}
+  72%{box-shadow:0px 0px 40px rgb(0, 162, 255)}
+  89%{box-shadow:0px 0px 40px rgb(255, 30, 30)}           
+  100%{box-shadow:0px 0px 40px rgb(255, 247, 0)}
+ 
+}
+#brawlers{
+  background-color: #333;
+  color:rgb(96, 255, 64);
+  text-shadow: 2px 1px 10px #4fb5ff;
+}
+
+
